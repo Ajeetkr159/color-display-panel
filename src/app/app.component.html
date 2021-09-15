@@ -1,0 +1,13 @@
+<div class="split left">
+  <div class="centered">
+    <label for="">Hex Code:</label>
+    <input type="text" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" [(ngModel)]="color">
+      <small *ngIf=""></small>
+  </div>
+</div>
+<div class="split right" [ngStyle]="{'background-color': color}">
+</div>
+
+
+
+<router-outlet></router-outlet>
